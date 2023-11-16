@@ -15,7 +15,7 @@ class ChatController extends Controller
 {
     public function index(): Factory|View|Application
     {
-        auth()->loginUsingId(1);
+        auth()->loginUsingId(random_int(1,4));
 
         return view('chat');
     }
